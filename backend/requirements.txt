@@ -1,6 +1,6 @@
-Django==5.1.5
+Django==5.2.3
 djangorestframework==3.16.1
-graphene-django==3.2.
+graphene-django==3.2.3
 django-cors-headers==4.9.0
 django-filter==25.2
 psycopg2-binary==2.9.11
