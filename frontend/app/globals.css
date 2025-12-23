@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* UW Official Brand Colors */
+  --uw-husky-purple: #4b2e83;
+  --uw-husky-purple-dark: #32006e;
+  --uw-husky-purple-light: #c5b4e3;
+  --uw-husky-gold: #b7a57a;
+  --uw-heritage-gold: #85754d;
+  --uw-spirit-gold: #ffc700;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* UW Colors */
+  --color-uw-purple: var(--uw-husky-purple);
+  --color-uw-purple-dark: var(--uw-husky-purple-dark);
+  --color-uw-purple-light: var(--uw-husky-purple-light);
+  --color-uw-gold: var(--uw-husky-gold);
+  --color-uw-heritage-gold: var(--uw-heritage-gold);
+  --color-uw-spirit-gold: var(--uw-spirit-gold);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure good contrast for text */
+.text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.text-gray-700 {
+  color: #374151 !important;
+}
+
+.text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.text-gray-900 {
+  color: #111827 !important;
+}

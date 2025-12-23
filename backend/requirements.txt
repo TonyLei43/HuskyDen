@@ -1,0 +1,10 @@
+Django==6.0
+djangorestframework==3.16.1
+graphene-django==3.2.3
+django-cors-headers==4.9.0
+django-filter==25.2
+psycopg2-binary==2.9.11
+python-dotenv==1.2.1
+dj-database-url==2.1.0
+gunicorn==21.2.0
+
